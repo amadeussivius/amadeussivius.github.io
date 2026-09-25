@@ -2,46 +2,140 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=5.0">
-      <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amadeus</title>
+
+    <style>
         body {
-            background-color: darkblue;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111827;
             color: white;
         }
-<a href="https://www.google.com">Google</a>
-        h1 {
-            color: lightblue;
-            font-size: 60px;
+
+        /* Meny */
+        nav {
+            background-color: #1f2937;
+            padding: 20px;
+            text-align: center;
         }
 
-        h2 {
-            color: lightblue;
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* Huvudsektion */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            margin-bottom: 10px;
+            color: #60a5fa;
+        }
+
+        .hero p {
+            font-size: 22px;
+            color: #d1d5db;
+        }
+
+        /* Bild */
+        .hero img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 30px;
+        }
+
+        /* Knapp */
+        .knapp {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 25px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        .knapp:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Sektioner */
+        section {
+            max-width: 800px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        section h2 {
+            font-size: 35px;
+            color: #93c5fd;
         }
     </style>
 </head>
-    <body>
-    <h1>Hej, jag heter Amadeus </h1>
-<img src="OIP.webp" alt="OIP.webp">
-        img {
-    position: absolute;
-    left: 300px;
-    top: 100px;
-}
-        
-    <h2>Om mig</h2>
-    <p>
-        Hej! Jag heter Amadeus Sivius och det här är min hemsida.
-    </p>
 
-    <h2>Mina projekt</h2>
-    <p>
-        Här kommer jag att lägga upp mina projekt.
-    </p>
+<body>
 
-    <h2>Kontakt</h2>
-    <p>
-        Du kan kontakta mig på: amadeus.sivius@gmail.com
-    </p>
+    <nav>
+        <a href="#hem">Hem</a>
+        <a href="#om">Om mig</a>
+        <a href="#projekt">Projekt</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="hero" id="hem">
+
+        <h1>Amadeus</h1>
+
+        <p>Välkommen till min hemsida.</p>
+
+        <img src="bild.jpg" alt="Bild på Amadeus">
+
+        <br>
+
+        <a href="https://github.com/amadeussivius"
+           target="_blank"
+           class="knapp">
+            Min GitHub
+        </a>
+
+    </div>
+
+    <section id="om">
+        <h2>Om mig</h2>
+        <p>
+            Hej! Jag heter Amadeus. Här kan jag skriva lite om mig själv,
+            mina intressen och vad jag håller på med.
+        </p>
+    </section>
+
+    <section id="projekt">
+        <h2>Mina projekt</h2>
+        <p>
+            Här kommer jag att lägga upp mina projekt.
+        </p>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>
+            Du kan kontakta mig här.
+        </p>
+    </section>
 
 </body>
 </html>
